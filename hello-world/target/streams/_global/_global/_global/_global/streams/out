@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [hello-world / Compile / run] Found inputs: /Users/ayomide/Documents/Projects/ScalaTest/hello-world/*.{java,scala},/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/java/**/*.{java,scala},/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/resources/**/*,/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/**/*.{java,scala},/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala-2.13/**/*.{java,scala}[0m
+[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for hello-world/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mhello-world / Compile / run - Accepted event for /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala (previous stamp: Hash(8a50abeac8d8b42061ccedf7d5d3b9a787980437), current stamp: Hash(7551579fc4b6c339ef314d08dbe98cc5a52add87))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala -> Trigger. Returning: (Update(/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala, 2020-Aug-03 22:24:37.853 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala, 2020-Aug-03 22:24:37.853 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for hello-world/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mhello-world / Compile / run - Accepted event for /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala (previous stamp: Hash(7551579fc4b6c339ef314d08dbe98cc5a52add87), current stamp: Hash(8537bd1ac0324bcc5a07c90ef8f1ab6139821ee1))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala -> Trigger. Returning: (Update(/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala, 2020-Aug-03 22:25:19.552 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala, 2020-Aug-03 22:25:19.552 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for hello-world/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
