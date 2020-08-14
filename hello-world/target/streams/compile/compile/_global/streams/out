@@ -1,14 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala:29:19: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : reflect.runtime.universe.Literal[0m
-[0m[[0m[31merror[0m] [0m[0m required: reflect.runtime.universe.Apply[0m
-[0m[[0m[31merror[0m] [0m[0m        applies = app :: applies[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala:30:24: not found: value fun[0m
-[0m[[0m[31merror[0m] [0m[0m        super.traverse(fun)[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala:31:29: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : reflect.runtime.universe.Constant[0m
-[0m[[0m[31merror[0m] [0m[0m required: List[reflect.runtime.universe.Tree][0m
-[0m[[0m[31merror[0m] [0m[0m        super.traverseTrees(args)[0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/ayomide/Documents/Projects/ScalaTest/hello-world/src/main/scala/Main.scala:61:13: Pattern variables must start with a lower-case letter. (SLS 8.1.1.)[0m
+[0m[[0m[31merror[0m] [0m[0m      case M:ModuleDef =>[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

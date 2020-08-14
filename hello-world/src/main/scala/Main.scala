@@ -1,40 +1,71 @@
 
 import scala.reflect.runtime.universe.{ reify, showRaw }
 import scala.reflect.runtime.universe._
+import scala.io.Source._
+import java.nio.file.Paths
+import scala.reflect.runtime.currentMirror
+import scala.tools.reflect.ToolBox
 
-//import scala.tools.nsc
-// import nsc.Global
-// import nsc.ast.Printers
-// import nsc.Phase
-// import nsc.plugins.Plugin
-// import nsc.plugins.PluginComponent
+import scala.tools.nsc.{Global, Settings}
+import scala.tools.nsc.reporters.ConsoleReporter
+
+
 
 object Main extends App {
-  println("Hello, World!")
-  //println( showRaw( reify{5}.tree ) )// prints Literal(Constant(5))
-  //println( showRaw( reify{print "Hello World";}.tree ) )// prints Literal(Constant(5))
-  val expr = reify{class Flower { def name = "Rose" }}
-  val tree = showRaw(expr.tree)
+  
+
+  val tb = runtimeMirror(this.getClass.getClassLoader).mkToolBox()
+
+  val sourceCode = scala.io.Source.fromFile("../test.scala").mkString
+
+  val myTree = tb.parse(sourceCode)
+
+  var rawTree = showRaw(myTree)
+
+  println(myTree) //printing original tree
+  println(rawTree)  //printing raw tree
 
   
-  //println(showRaw(tree))
+
+//   //Eval[Unit]("println(\"Hi\")")
+
+//   //println(lines)
+//   //println(Paths.get(".").toAbsolutePath)
+//   val expr = reify{toolbox.eval(toolbox.parse(lines))}
+
+//   val expr2 = reify{object Test {
+//   def main(args: Array[String]): Unit = {
+//     println("Hello World!");
+//   }
+// }}
+
+//   //print(expr.getClass)
+//   val tree = showRaw(expr.tree)
+//   val tree2 = showRaw(expr2.tree)
+
+//   // println(tree)
+//   // println(tree2)
+//   val program = """object Main extends App { print("Hello!") }"""
+//   val tree1 = program.parse[Source].get  
+
+  
+//   //println(showRaw(tree))
   
 
   class traverser extends Traverser {
 
-    println (tree)
-    var applies = List[Apply]()
+    //Sprintln (tree)
+    //var applies = List[Apply]()
     override def traverse (tree: Tree): Unit = tree match {
-      case  app @ Apply(fun, args) =>
-        applies = app :: applies
-        super.traverse(fun)
-        super.traverseTrees(args)
+      case  Apply =>
         println (tree)
+      case m:ModuleDef =>
+        println(tree)
       case _ => super.traverse(tree)
     }
   
   }
 
-  new traverser().traverse(expr.tree)
+  new traverser().traverse(myTree)
   
 }
