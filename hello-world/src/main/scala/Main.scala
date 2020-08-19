@@ -56,16 +56,51 @@ object Main extends App {
 
     //Sprintln (tree)
     //var applies = List[Apply]()
-    override def traverse (tree: Tree): Unit = tree match {
-      case  Apply =>
-        println (tree)
-      case m:ModuleDef =>
-        println(tree)
-      case _ => super.traverse(tree)
+    override def traverse (tree: Tree): Unit = 
+      tree match {
+            
+            case app: Apply => { // def apply[T <: Actor](creator: ⇒ T)(implicit arg0: ClassTag[T]): Props
+              println("Apply")   
+              super.traverse(tree)
+            }
+            case tt: TypeTree => {
+              println("TypeTree")
+              super.traverse(tree)
+            }
+            case trt: TermTree => {
+              println("TermTree")
+              super.traverse(tree)
+            }
+            case smt: SymTree => {
+              println("SymTree")
+              super.traverse(tree)
+            }
+    
     }
-  
   }
 
   new traverser().traverse(myTree)
   
 }
+
+
+// object ApplyExample01 extends App {
+
+//   class Greeter1(var message: String) {
+//     println("A greeter-1 is being instantiated with message " + message)
+
+//   }
+
+//   class Greeter2 {
+
+//     def apply(message: String) = {
+//       println("A greeter-2 is being instantiated with message " + message)
+//     }
+//   }
+
+//   val g1: Greeter1 = new Greeter1("hello")
+//   val g2: Greeter2 = new Greeter2()
+
+//   g2("world")
+
+// }

@@ -1,19 +1,28 @@
-def prettyPrint(input: String) = {
-        var level = 0
-        var tabSize = 2
-        input.foreach {
-          case '(' =>
-            level += 1
-            println()
-            print(("|" + " "*(tabSize-1)) * (level-1))
-            print("|" + "-"*(tabSize-1))
-          case ')' =>
-            level -= 1
-          case ',' =>
-            println()
-            print(("|" + " "*(tabSize-1)) * (level-1))
-            print("|" + "-"*(tabSize-1))
-          case ' ' =>
-          case f => print(f)
-        }
+// package com.example
+
+// import akka.actor.testkit.typed.scaladsl.ScalaTestWithActorTestKit
+// import com.example.Greeter.Greet
+// import com.example.Greeter.Greeted
+// import org.scalatest.wordspec.AnyWordSpecLike
+
+//#definition
+// class AkkaQuickstartSpec extends ScalaTestWithActorTestKit with AnyWordSpecLike {
+// //#definition
+
+//   "A Greeter" must {
+//     //#test
+//     "reply to greeted" in {
+//       val replyProbe = createTestProbe[Greeted]()
+//       val underTest = spawn(Greeter())
+//       underTest ! Greet("Santa", replyProbe.ref)
+//       replyProbe.expectMessage(Greeted("Santa", underTest.ref))
+//     }
+//     //#test
+//   }
+
+// }
+
+object Foo {
+  var y = 5
+  def apply (x: Int) = x + y
 }
