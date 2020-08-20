@@ -59,14 +59,14 @@ object Main extends App {
     override def traverse (tree: Tree): Unit = 
       tree match {
             
-            case app: Apply => { // def apply[T <: Actor](creator: ⇒ T)(implicit arg0: ClassTag[T]): Props
-              println("Apply")   
+            
+            case AppliedTypeTree(tq"$tpt",List(tq"$tpe")) => {
+              println("AppliedTypeTree")
               super.traverse(tree)
+//AppliedTypeTree(Select(Select(Ident(termNames.ROOTPKG), scala), TypeName("<byname>")), List(Ident(TypeName("Int"))))
+              
             }
-            case tt: TypeTree => {
-              println("TypeTree")
-              super.traverse(tree)
-            }
+            
             case trt: TermTree => {
               println("TermTree")
               super.traverse(tree)
@@ -75,6 +75,11 @@ object Main extends App {
               println("SymTree")
               super.traverse(tree)
             }
+            // case s: Star => {
+            //   println("Star")
+            //   super.traverse(tree)
+            // }
+            
     
     }
   }

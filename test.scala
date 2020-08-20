@@ -22,7 +22,15 @@
 
 // }
 
-object Foo {
-  var y = 5
-  def apply (x: Int) = x + y
+
+
+def lazy_method(n: => Int) {
+  println("lazy method")
+  println(n)
 }
+
+// def eager_method(n: Int) {
+//   println("eager method")
+//   println(n)
+// }
+
